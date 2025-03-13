@@ -1,0 +1,344 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+@import "header.css";
+@import "footer.css";
+
+
+
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+@media (max-width:1920px) {
+  .whatsup__item {
+    display: none;
+  }
+}
+
+@media (max-width: 1650px) {
+  .consultation__item {
+    position: fixed;
+    top: unset;
+    left: unset;
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .consultation__text {
+    display: none;
+  }
+
+  .whatsup__item {
+    display: block;
+    position: fixed;
+    top: unset;
+    left: unset;
+    bottom: 25%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .blur__circle-3 {
+    display: none;
+  }
+
+  .header__image-1 {
+    left: -1%;
+  }
+
+  .header__image-2 {
+    right: 0%;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+
+  .blur__circle-4 {
+    left: 2%;
+  }
+
+  .header__image-1 {
+    left: -19%;
+  }
+
+  .header__image-2 {
+    width: 98%;
+  }
+
+  .header__image-3 {
+    display: none;
+  }
+
+  .consultation__item {
+    right: 2%;
+    bottom: 20%;
+  }
+
+  .whatsup__item {
+    right: 2%;
+    bottom: 6%;
+  }
+
+
+  .header__logo {
+    max-width: 225px;
+  }
+
+
+  .hero__info {
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .warranty__icon {
+    align-self: end;
+  }
+
+  .scroll__item {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .header__top {
+    padding-top: 0;
+  }
+
+  .header__phone {
+    background-image: linear-gradient(#0B4D69FF, #104C54FF);
+    padding: 21.5px 27px 22.5px 22px;
+    border-bottom-left-radius: 22px;
+    margin-right: -14px;
+    visibility: hidden;
+    max-width: 0;
+    transition: var(--transition);
+  }
+
+  .header__phone--opened {
+    opacity: 1;
+    visibility: visible;
+    max-width: 100%;
+  }
+
+  .phone__border {
+    padding: 12px 0 16.6px;
+    border-top: 1px #3b768f62 solid;
+    gap: 0;
+    position: relative;
+  }
+
+  .phone__border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px #3b768f62 solid;
+    width: 217px;
+  }
+
+  .phone__icon {
+    margin-right: 15px;
+    visibility: visible;
+    position: absolute;
+    right: -7px;
+  }
+
+  .phone__icon--pos {
+    position: unset;
+  }
+
+  .phone__icon img {
+    width: 32.5px;
+  }
+
+  .phone__number {
+    margin-right: 37px;
+  }
+
+  .phone__number--none {
+    display: none;
+  }
+
+  .phone__cancel--none {
+    opacity: 0;
+  }
+
+  .phone__cancel {
+    display: block;
+    padding: 5px;
+  }
+
+
+  .consultation__item {
+    right: 31px;
+    bottom: 41%;
+  }
+
+  .consultation__button {
+    width: 63px;
+    height: 63px;
+  }
+
+  .consultation__button::after {
+    inset: -13px;
+    border: 13px solid #ffffff;
+  }
+
+  .consultation__button img {
+    width: 25px;
+  }
+
+  .whatsup__item {
+    right: 31px;
+    bottom: 31%;
+  }
+
+  .whatsup__button {
+    width: 63px;
+    height: 63px;
+  }
+
+  .whatsup__button::after {
+    inset: -13px;
+    border: 13px solid #ffffff;
+  }
+
+  .whatsup__button img {
+    width: 25px;
+  }
+
+  .hero__title {
+    font-size: 15vw;
+  }
+
+  .hero__warranty {
+    gap: 10px;
+  }
+}
+
+@media (max-width:600px) {
+
+  .blur__circle-1 {
+    left: -30%;
+  }
+
+  .blur__circle-4 {
+    left: -29%;
+}
+
+.header__image-1 {
+  width: 66%;
+  top: -23%;
+  right: 0;
+  left: unset;
+}
+
+  .header__image-2 {
+    width: 125%;
+    right: -6%;
+    height: 50%;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 36px;
+  }
+
+  .hero__warranty {
+    margin-bottom: 65px;
+  }
+
+  .warranty__icon {
+    align-self: start;
+    margin-top: 0;
+    
+  }
+
+
+
+  .warranty__text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+}
+
+@media (max-width:550px) {
+  .header__logo--none {
+    opacity: 0;
+  }
+}
+
+@media (max-width:400px) {
+
+  .header__image-1 {
+    left: 70%;
+  }
+
+
+  .header__image-2 {
+    width: 424px;
+    height: 284px;
+    bottom: 24%;
+    right: unset;
+    top: unset;
+  }
+
+  .header__logo {
+    max-width: 195px;
+  }
+
+
+  .header__hero {
+    padding: 32px 0 150px;
+  }
+
+  .hero__info {
+    text-align: left;
+  }
+
+  .hero__title {
+    font-size: 14.2vw;
+    line-height: 62px;
+    margin-bottom: 0;
+  }
+
+  .hero__text {
+    max-width: 300px;
+  }
+
+  .warranty__icon {
+    width: 49px;
+    height: 49px;
+  }
+
+  .warranty__icon img {
+    width: 28px;
+  }
+
+  .warranty__icon::before {
+    height: 109%;
+  }
+
+  .hero__warranty {
+    margin-bottom: 285px;
+  }
+
+  .hero__button {
+    text-align: center;
+  }
+}

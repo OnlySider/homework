@@ -1,0 +1,210 @@
+:root {
+    --general-text: #FFFFFF;
+    --accent-text: #4ABCEC;
+    --circle-bg: #00E0FF;
+    --general-bg: linear-gradient(#022335FF, #043A41FF);
+    --general-bg-2: linear-gradient(#022335CC, #0C373DCC);
+    --accent-bg: linear-gradient(#00E0FF1C, #00E0FF0E);
+    --button-color: linear-gradient(#03E1FFA8, #13CDC2FF);
+    --accent-color: linear-gradient(#1F3F4D8A, #1F4B5E00);
+    --input-color: #FFFFFF;
+    --transition: all .6s;
+    --border-radius: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+.body {
+    font-family: "AvenirNextCyr", "Arial", sans-serif;
+    line-height: 21px;
+    font-weight: 450;
+    color: var(--general-text);
+}
+
+.body--opened-menu {
+    overflow: hidden;
+}
+
+.body--opened-modal {
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__program,
+.main__gallery,
+.main__testimonials {}
+
+.container {
+    max-width: 1215px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.title {
+    font-family: 'Avenir Next Cyr';
+    font-size: 54px;
+    line-height: 10px;
+    color: var(--general-text);
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--button-color);
+    border-radius: 9px;
+    font-weight: 750;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 22px 13px 25px 13px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width: 479px;
+    box-shadow: 0px 7px 20px -7px #00E0FF;
+
+    transition: var(--transition);
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* .modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #00000071;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+
+.body--opened-modal .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__window {
+    position: relative;
+    background: var(--general-bg);
+    border-radius: var(--border-radius);
+    padding: 0 60px 60px;
+    max-width: 428px;
+}
+
+.modal__cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal__cancel path,
+.modal__cancel rect {
+    transition: var(--transition);
+}
+
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+    stroke: var(--input-color);
+}
+
+.modal__img {
+    margin: -65px 0 15px 13px;
+    max-width: 100%;
+}
+
+.modal__title {
+    font-family: 'Gabriola';
+    font-size: 42px;
+    line-height: .9;
+    color: var(--accent-text);
+    margin-bottom: 10px;
+}
+
+.modal__text {
+    margin-bottom: 30px;
+}
+
+.modal__form-label {
+    margin-bottom: 10px;
+} */
+
+/* .field {
+    position: relative;
+    display: block;
+}
+
+.field span {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    font-size: 11px;
+    color: var(--input-color);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.field__input {
+    display: block;
+    width: 100%;
+    background: #00000000;
+    border: 1px solid var(--input-color);
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.field__input:hover {
+    border-color: var(--accent-color);
+}
+
+.field__input::placeholder {
+    color: var(--input-color);
+    transition: var(--transition);
+}
+
+.field__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+.field__input:focus {
+    padding: 26px 42px 12px 28px;
+}
+
+.field__input:focus+span {
+    opacity: 1;
+    visibility: visible;
+} */
+
+
+
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+

@@ -1,0 +1,13 @@
+<svg width="40.000000" height="50.000000" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="45.128235" y1="-0.000008" x2="0.000141" y2="50.022457" id="paint_linear_177_1799_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.250000" stop-color="#3B768F"/>
+			<stop offset="0.536458" stop-color="#3EC6FF"/>
+			<stop offset="0.817708" stop-color="#3B768F"/>
+		</linearGradient>
+	</defs>
+	<path id="Vector" d="M12 0C11.44 0 11 0.44 11 1L11 9C11 9.55 11.44 10 12 10L28 10C28.55 10 29 9.55 29 9L29 1C29 0.44 28.55 0 28 0L12 0ZM3 2C1.34 2 0 3.34 0 5L0 47C0 48.65 1.34 50 3 50L37 50C38.65 50 40 48.65 40 47L40 5C40 3.34 38.65 2 37 2L31 2L31 6L36 6L36 46L4 46L4 6L9 6L9 2L3 2ZM6 8L6 44L34 44L34 8L31 8L31 9C31 10.65 29.65 12 28 12L12 12C10.34 12 9 10.65 9 9L9 8L6 8ZM10 17L18 17L18 25L10 25L10 17ZM12 19L12 23L16 23L16 19L12 19ZM21 20L30 20L30 22L21 22L21 20ZM10 30L18 30L18 38L10 38L10 30ZM12 32L12 36L16 36L16 32L12 32ZM13 33L15 33L15 35L13 35L13 33ZM21 33L30 33L30 35L21 35L21 33Z" fill="url(#paint_linear_177_1799_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
