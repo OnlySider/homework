@@ -1,6 +1,6 @@
 (function () {
 
-    // Бургер
+    // Номер
 
     const phoneOpened = document.querySelector('.phone__icon');
     const phoneClose = document.querySelector('.phone__cancel');
@@ -38,58 +38,33 @@
             phoneOpened.classList.remove('phone__icon--pos');
             phoneNumber.classList.add('phone__number--none');
             phoneClose.classList.add('phone__cancel--none');
-            logoNone.classList.remove('header__logo--none')
+            logoNone.classList.remove('header__logo--none');
+
         }
     }
 
-    // const phoneOpened = document.querySelector('.phone__icon')
-    // const phoneClose = document.querySelector('.phone__cancel')
+    // Модалка
 
-    // phoneOpened.addEventListener('click', openPhone)
-    // phoneClose.addEventListener('click', closePhone)
+    const modal = document.querySelector('.modal')
+    const modalButton = document.querySelector('.button')
 
-    // function phoneOpened(e) {
-    //     e.preventDefault()
+    modalButton.addEventListener('click', openModal)
+    modal.addEventListener('click', closeModal)
 
-    //     if (document.querySelector.contains('.header__phone'))
-    //         document.body.classList.add('header__phone--opened')
-    //     else ()
-    // }
+    function openModal(e) {
+        e.preventDefault()
+        document.body.classList.toggle('body--opened-modal')
+    }
 
-    // function phoneClose(e) {
-    //     e.preventDefault()
+    function closeModal(e) {
+        e.preventDefault()
 
-    //     const target = e.target
+        const target = e.target
 
-    //     if (target.closest('.phone__cancel') || target.classList.contains('modal')) {
-    //         document.body.classList.remove('body--opened-modal')
-    //     }
-
-    // }
-
-    // // Модалка
-
-    // const modal = document.querySelector('.modal')
-    // const modalButton = document.querySelector('.about__img-button')
-
-    // modalButton.addEventListener('click', openModal)
-    // modal.addEventListener('click', closeModal)
-
-    // function openModal(e) {
-    //     e.preventDefault()
-    //     document.body.classList.toggle('body--opened-modal')
-    // }
-
-    // function closeModal(e) {
-    //     e.preventDefault()
-
-    //     const target = e.target
-
-    //     if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
-    //         document.body.classList.remove('body--opened-modal')
-    //     }
-
-    // }
+        if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
+            document.body.classList.remove('body--opened-modal')
+        }
+    }
 
     // // Табы
 
@@ -214,10 +189,10 @@
     //     }
     // });
 
-    // // Маска для телефона
+    // Маска для телефона
 
-    // const telInputs = document.querySelectorAll('input[type="tel"]')
-    // const im = new Inputmask('+7 (999) 999-99-99')
-    // im.mask(telInputs)
+    const telInputs = document.querySelectorAll('input[type="tel"]')
+    const im = new Inputmask('+7 (999) 999-99-99')
+    im.mask(telInputs)
 
 })()

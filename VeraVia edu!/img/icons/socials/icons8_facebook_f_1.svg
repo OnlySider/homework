@@ -1,0 +1,19 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip177_2240">
+			<rect id="icons8_facebook_f_1 1" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="18.874365" y1="2.000000" x2="7.000043" y2="22.009047" id="paint_linear_177_2241_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.250000" stop-color="#3B768F"/>
+			<stop offset="0.536458" stop-color="#3EC6FF"/>
+			<stop offset="0.817708" stop-color="#3B768F"/>
+		</linearGradient>
+	</defs>
+	<rect id="icons8_facebook_f_1 1" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip177_2240)">
+		<path id="Vector" d="M17.52 9L14 9L14 7C14 5.96 14.08 5.31 15.56 5.31L17.43 5.31L17.43 2.13C16.52 2.04 15.6 1.99 14.69 2C11.98 2 10 3.65 10 6.69L10 9L7 9L7 13L10 12.99L10 22L14 22L14 12.99L17.06 12.99L17.52 9Z" fill="url(#paint_linear_177_2241_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

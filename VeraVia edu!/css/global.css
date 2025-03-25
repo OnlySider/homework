@@ -44,10 +44,6 @@ html {
     flex-grow: 1;
 }
 
-.main__program,
-.main__gallery,
-.main__testimonials {}
-
 .container {
     max-width: 1215px;
     margin: 0 auto;
@@ -56,7 +52,8 @@ html {
 }
 
 .title {
-    font-family: 'Avenir Next Cyr';
+    font-family: 'Avenir Next Cyr', sans-serif;
+    text-transform: uppercase;
     font-size: 54px;
     line-height: 10px;
     color: var(--general-text);
@@ -86,10 +83,10 @@ html {
     transform: scale(1.05);
 }
 
-/* .modal {
+.modal {
     position: fixed;
     inset: 0;
-    z-index: 10;
+    z-index: -1;
     background: #00000071;
     padding: 15px;
 
@@ -99,112 +96,108 @@ html {
 
     opacity: 0;
     visibility: hidden;
-    transition: all .6s;
+    transition: var(--transition);
 }
 
 .body--opened-modal .modal {
     opacity: 1;
     visibility: visible;
+    z-index: 2;
 }
 
 .modal__window {
     position: relative;
-    background: var(--general-bg);
+    background: linear-gradient(348deg, #033958FF, #0F6B78FF);
     border-radius: var(--border-radius);
-    padding: 0 60px 60px;
-    max-width: 428px;
+    padding: 33px 26px 44px 29px;
+    max-width: 450px;
 }
 
 .modal__cancel {
     position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.modal__cancel path,
-.modal__cancel rect {
-    transition: var(--transition);
-}
-
-.modal__cancel:hover path,
-.modal__cancel:hover rect {
-    stroke: var(--input-color);
-}
-
-.modal__img {
-    margin: -65px 0 15px 13px;
-    max-width: 100%;
+    top: -40px;
+    right: 0;
 }
 
 .modal__title {
-    font-family: 'Gabriola';
-    font-size: 42px;
-    line-height: .9;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    width: 450px;
+    text-transform: uppercase;
+}
+
+.modal__title span {
     color: var(--accent-text);
-    margin-bottom: 10px;
 }
 
 .modal__text {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    color: var(--circle-bg);
 }
 
 .modal__form-label {
     margin-bottom: 10px;
-} */
 
-/* .field {
+    border: 2px solid transparent;
+    border-radius: 9px;
     position: relative;
-    display: block;
+
+    cursor: text;
 }
 
-.field span {
+.modal__form-label::after {
+    content: '';
     position: absolute;
-    top: 12px;
-    left: 28px;
-    font-size: 11px;
-    color: var(--input-color);
+    width: 101.6%;
+    height: 108%;
+    top: -2px;
+    left: -3px;
+    border: inherit;
+    border-radius: 9px;
+    background: linear-gradient(90deg, #1f4d60, #49b9e8, #1f4d60) border-box;
+    mask: linear-gradient(white, white) padding-box, linear-gradient(white, white);
+    mask-composite: exclude;
+    opacity: 0.6;
+}
 
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--transition);
+
+    .modal__form-label:nth-child(8) {
+        margin-bottom: 50px;
+    }
+
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.field {
+    display: block;
 }
 
 .field__input {
     display: block;
     width: 100%;
-    background: #00000000;
-    border: 1px solid var(--input-color);
-    border-radius: 100px;
-    padding: 19px 42px 19px 28px;
+    background: var(--accent-bg);
+    color: var(--general-text);
+    padding: 21px 42px 16px 21px;
     font-size: 16px;
     transition: var(--transition);
 }
 
-.field__input:hover {
-    border-color: var(--accent-color);
-}
-
 .field__input::placeholder {
-    color: var(--input-color);
+    color: var(--general-text);
     transition: var(--transition);
 }
 
-.field__input:hover::placeholder {
-    color: var(--accent-color);
+.modal__button {
+    color: var(--general-text);
 }
 
-.field__input:focus {
-    padding: 26px 42px 12px 28px;
-}
-
-.field__input:focus+span {
-    opacity: 1;
-    visibility: visible;
-} */
 
 
 
 /* =============================================== */
 /* =============================================== */
 /* =============================================== */
-

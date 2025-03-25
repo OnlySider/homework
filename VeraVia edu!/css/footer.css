@@ -1,0 +1,134 @@
+.footer {
+  background-image: linear-gradient(90deg,#022335FF, #043A41FF);
+  position: relative;
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 65px 0 45px;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__feedback {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px 36px;
+}
+
+.footer__mail img {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.mail__link {
+  transition: var(--transition);
+}
+
+.mail__link:hover {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
+
+.footer__phone img {
+  margin-right: 7px;
+}
+
+.footer__number {
+  transition: var(--transition);
+}
+
+.footer__number:hover {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  grid-column: 1 / 3;
+  justify-self: end;
+  align-items: center;
+}
+
+.socials__text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 21px;
+  letter-spacing: 1.2px;
+  color: #747D81;
+
+  margin-right: 14px;
+}
+
+.socials__list {
+  display: flex;
+  align-items: center;
+}
+
+.socials__list-item {
+  margin-right: 16px;
+}
+
+.socials__list-item:last-child {
+  margin-right: 0;
+}
+
+.copyright__text {
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: max-content;
+  position: relative;
+}
+
+.copyright__text::before {
+  content: '';
+  position: absolute;
+  right: 110%;
+  top: 50%;
+  width: 784px;
+  height: 1px;
+  background: #00E0FF33;
+}
+
+.copyright__text::after {
+  content: '';
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  width: 784px;
+  height: 1px;
+  background: #00E0FF33;
+}
+
+.footer__afreeca {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: max-content;
+  margin: 17.5px 0 18px auto;
+}
+
+.afreeca__text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 21px;
+  letter-spacing: 1.2px;
+  color: #747D81;
+}
+
+.footer__circle {
+  width: 359px;
+  height: 359px;
+  background: var(--circle-bg);
+  filter: blur(167px);
+  position: absolute;
+  right: 15%;
+  bottom: -100%;
+}
