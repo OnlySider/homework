@@ -39,7 +39,6 @@
             phoneNumber.classList.add('phone__number--none');
             phoneClose.classList.add('phone__cancel--none');
             logoNone.classList.remove('header__logo--none');
-
         }
     }
 
@@ -66,70 +65,40 @@
         }
     }
 
-    // // Табы
 
-    // const tabControls = document.querySelector('.tab-conrols')
+    // Аккордеон
 
-    // tabControls.addEventListener('click', toggleTab)
+    const accordionLists = document.querySelectorAll('.accordion-list');
 
-    // function toggleTab(e) {
+    accordionLists.forEach(el => {
 
-    //     const tabControl = e.target.closest('.tab-conrols__link')
+        el.addEventListener('click', (e) => {
 
-    //     if (!tabControl) return
-    //     e.preventDefault()
-    //     if (tabControl.classList.contains('tab-conrols__link--active')) return
+            const accordionList = e.currentTarget
+            const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+            const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
 
-    //     const tabContentID = tabControl.getAttribute('href')
-    //     const tabContent = document.querySelector(tabContentID)
-    //     const activeControl = document.querySelector('.tab-conrols__link--active')
-    //     const activeContent = document.querySelector('.tab-content--show')
+            const accordionControl = e.target.closest('.accordion-list__control');
+            if (!accordionControl) return
+            e.preventDefault()
+            const accordionItem = accordionControl.parentElement;
+            const accordionContent = accordionControl.nextElementSibling;
 
-    //     if (activeControl) {
-    //         activeControl.classList.remove('tab-conrols__link--active')
-    //     }
-    //     if (activeContent) {
-    //         activeContent.classList.remove('tab-content--show')
-    //     }
+            if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+                accordionOpenedItem.classList.remove('accordion-list__item--opened');
+                accordionOpenedContent.style.maxHeight = null;
+            }
+            accordionItem.classList.toggle('accordion-list__item--opened');
 
-    //     tabControl.classList.add('tab-conrols__link--active')
-    //     tabContent.classList.add('tab-content--show')
+            if (accordionItem.classList.contains('accordion-list__item--opened')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            } else {
+                accordionContent.style.maxHeight = null;
+            }
 
-    // }
+        });
 
-    // // Аккордеон
-
-    // const accordionLists = document.querySelectorAll('.accordion-list');
-
-    // accordionLists.forEach(el => {
-
-    //     el.addEventListener('click', (e) => {
-
-    //         const accordionList = e.currentTarget
-    //         const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
-    //         const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
-
-    //         const accordionControl = e.target.closest('.accordion-list__control');
-    //         if (!accordionControl) return
-    //         e.preventDefault()
-    //         const accordionItem = accordionControl.parentElement;
-    //         const accordionContent = accordionControl.nextElementSibling;
-
-    //         if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
-    //             accordionOpenedItem.classList.remove('accordion-list__item--opened');
-    //             accordionOpenedContent.style.maxHeight = null;
-    //         }
-    //         accordionItem.classList.toggle('accordion-list__item--opened');
-
-    //         if (accordionItem.classList.contains('accordion-list__item--opened')) {
-    //             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-    //         } else {
-    //             accordionContent.style.maxHeight = null;
-    //         }
-
-    //     });
-
-    // });
+    });
 
     // // Слайдер-галерея
 

@@ -124,8 +124,8 @@
 }
 
 .footer__circle {
-  width: 359px;
-  height: 359px;
+  width: 259px;
+  height: 259px;
   background: var(--circle-bg);
   filter: blur(167px);
   position: absolute;
