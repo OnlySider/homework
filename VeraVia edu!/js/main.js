@@ -46,6 +46,9 @@
 
     const modal = document.querySelector('.modal')
     const modalButton = document.querySelector('.button')
+    const btn1 = document.getElementById('myBtn1')
+    const btn2 = document.getElementById('myBtn2')
+    const btn3 = document.getElementById('myBtn3')
 
     modalButton.addEventListener('click', openModal)
     modal.addEventListener('click', closeModal)
@@ -53,7 +56,12 @@
     function openModal(e) {
         e.preventDefault()
         document.body.classList.toggle('body--opened-modal')
+
     }
+
+    btn1.onclick = openModal;
+    btn2.onclick = openModal;
+    btn3.onclick = openModal;
 
     function closeModal(e) {
         e.preventDefault()
