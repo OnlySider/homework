@@ -26,12 +26,12 @@
     0px 0px 24px #00E0FF,
     0px 4px 15px #4AD9EC,
     0px 3px 15px #00E0FF;
-    filter: blur(2px);
+    filter: blur(1px);
 
 }
 
 .consultation__item {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     max-width: 100px;
     top: 132px;

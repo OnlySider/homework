@@ -38,6 +38,7 @@ html {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .main {
@@ -140,10 +141,8 @@ html {
     margin-bottom: 10px;
 
     border: 2px solid transparent;
-    border-radius: 9px;
-    position: relative;
 
-    cursor: text;
+    position: relative;
 }
 
 .modal__form-label::after {
@@ -162,9 +161,9 @@ html {
 }
 
 
-    .modal__form-label:nth-child(8) {
-        margin-bottom: 50px;
-    }
+.modal__form-label:nth-child(8) {
+    margin-bottom: 50px;
+}
 
 input[type="datetime-local"]::-webkit-inner-spin-button,
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
@@ -179,10 +178,13 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 .field__input {
     display: block;
     width: 100%;
+    position: relative;
+    z-index: 1;
     background: var(--accent-bg);
     color: var(--general-text);
     padding: 21px 42px 16px 21px;
     font-size: 16px;
+    border-radius: 9px;
     transition: var(--transition);
 }
 
@@ -195,8 +197,53 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     color: var(--general-text);
 }
 
+/* -------------------------------------------------- */
 
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    left: 117px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 20px -7px #00E0FF;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+}
 
+.back-to-top__text {
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: #00e0ff;
+    transform: rotate(270deg);
+    width: 151px;
+    transform-origin: center;
+    position: absolute;
+    top: -127px;
+    left: -37px;
+    z-index: -1;
+}
+
+.back-to-top::after {
+    position: absolute;
+    content: '';
+    inset: -30px;
+    border: 30px solid #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.back-to-top:hover::after {
+    opacity: 0.05;
+}
 
 /* =============================================== */
 /* =============================================== */

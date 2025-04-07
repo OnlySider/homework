@@ -49,6 +49,10 @@
     const btn1 = document.getElementById('myBtn1')
     const btn2 = document.getElementById('myBtn2')
     const btn3 = document.getElementById('myBtn3')
+    const consultation = document.querySelector('.consultation__item')
+    const whatsup = document.querySelector('.whatsup__item')
+    const backToTop = document.querySelector('.back-to-top')
+
 
     modalButton.addEventListener('click', openModal)
     modal.addEventListener('click', closeModal)
@@ -56,6 +60,9 @@
     function openModal(e) {
         e.preventDefault()
         document.body.classList.toggle('body--opened-modal')
+        consultation.style.zIndex = '2';
+        whatsup.style.zIndex = '2';
+        backToTop.style.zIndex = '2';
 
     }
 
@@ -70,6 +77,9 @@
 
         if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
             document.body.classList.remove('body--opened-modal')
+            consultation.style.zIndex = 'revert-layer';
+            whatsup.style.zIndex = 'revert-layer';
+            backToTop.style.zIndex = 'revert-layer';
         }
     }
 
@@ -108,63 +118,107 @@
 
     });
 
-    // // Слайдер-галерея
+    // Объявления
 
-    // new Swiper('.gallery__slider', {
+    new Swiper('.advertisments__slider', {
 
-    //     spaceBetween: 15,
-    //     slidesPerView: 1.5,
+        slidesPerView: 3.02,
+        spaceBetween: 20,
 
-    //     pagination: {
-    //         el: '.gallery__pagination',
-    //         type: 'fraction',
-    //     },
+        navigation: {
+            nextEl: '.advertisments__button-next',
+            prevEl: '.advertisments__button-prev',
+        },
 
-    //     navigation: {
-    //         nextEl: '.gallery__next',
-    //         prevEl: '.gallery__prev',
-    //     },
+        breakpoints: {
+            201: {
+                slidesPerView: 1.1,
+            },
+            401: {
+                slidesPerView: 1.5,
+            },
+            501: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            601: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            801: {
+                slidesPerView: 2.02,
+                spaceBetween: 30,
+            },
+            1001: {
+                spaceBetween: 30,
+                slidesPerView: 2.5,
+            },
+            1201: {
+                spaceBetween: 20,
+                slidesPerView: 3.02,
+            }
+        }
+    });
 
-    //     breakpoints: {
-    //         601: {
-    //             slidesPerView: 3,
-    //         },
-    //         801: {
-    //             spaceBetween: 32,
-    //         },
-    //         1101: {
-    //             slidesPerView: 4,
-    //         }
-    //     }
-    // });
+    // Вакансии
 
-    // // Слайдер-отзывы
+    new Swiper('.vacancys__slider', {
 
-    // new Swiper('.testimonials__slider', {
+        slidesPerView: 3.02,
+        spaceBetween: 20,
 
-    //     spaceBetween: 0,
-    //     slidesPerView: 1,
-    //     centeredSlides: true,
+        navigation: {
+            nextEl: '.vacancys__button-next',
+            prevEl: '.vacancys__button-prev',
+        },
 
-    //     navigation: {
-    //         nextEl: '.testimonials__next',
-    //         prevEl: '.testimonials__prev',
-    //     },
+        breakpoints: {
+            201: {
+                slidesPerView: 1.1,
+            },
+            401: {
+                slidesPerView: 1.5,
+            },
+            601: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            801: {
+                slidesPerView: 2.02,
+                spaceBetween: 30,
+            },
+            1001: {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+            },
+            1201: {
+                slidesPerView: 3.02,
+                spaceBetween: 20,
+            }
+        }
+    });
 
-    //     scrollbar: {
-    //         el: '.swiper-scrollbar',
-    //         draggable: true,
-    //     },
+    // Back to top
 
-    //     breakpoints: {
-    //         901: {
-    //             slidesPerView: 1.5,
-    //         },
-    //         1201: {
-    //             slidesPerView: 2.1,
-    //         }
-    //     }
-    // });
+    document.addEventListener("DOMContentLoaded", function () {
+        const backToTop = document.querySelector(".back-to-top");
+
+        // Показать/скрыть кнопку при прокрутке страницы
+        window.addEventListener("scroll", function () {
+            if (window.pageYOffset >= 1500) {
+                backToTop.style.display = "flex";
+            } else {
+                backToTop.style.display = "none";
+            }
+        });
+
+        // Плавная прокрутка при клике на кнопку
+        backToTop.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+
 
     // Маска для телефона
 

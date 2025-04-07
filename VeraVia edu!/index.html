@@ -13,20 +13,20 @@
 
 <body class="body">
     <div class="wrapper">
+        <div class="consultation__item">
+            <a href="#" class="consultation__button">
+                <img src="img/icons/headphones.svg" alt="">
+            </a>
+            <p class="consultation__text">
+                Бесплатная консультация
+            </p>
+        </div>
+        <div class="whatsup__item">
+            <a href="#" class="whatsup__button">
+                <img src="img/icons/whatsup.svg" alt="">
+            </a>
+        </div>
         <header class="header">
-            <div class="consultation__item">
-                <a href="#" class="consultation__button">
-                    <img src="img/icons/headphones.svg" alt="">
-                </a>
-                <p class="consultation__text">
-                    Бесплатная консультация
-                </p>
-            </div>
-            <div class="whatsup__item">
-                <a href="#" class="whatsup__button">
-                    <img src="img/icons/whatsup.svg" alt="">
-                </a>
-            </div>
             <div class="blur__circle-1"></div>
             <div class="blur__circle-2"></div>
             <div class="blur__circle-3"></div>
@@ -43,8 +43,6 @@
             <div class="header__image-2">
             </div>
             <div class="header__image-3"></div>
-
-
             <div class="container">
                 <div class="header__top">
                     <a href="#" class="header__logo">
@@ -82,7 +80,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__reasons main">
+            <section class="main__reasons reasons">
                 <div class="container">
                     <h2 class="reasons__title title">
                         <span>7 причин</span> почему<br> именно мы?
@@ -152,13 +150,13 @@
                     </ul>
                 </div>
             </section>
-            <section class="main__ai main">
+            <section class="main__ai ai">
                 <div class="ai__image"></div>
                 <div class="ai__circle"></div>
                 <div class="ai__circle-2"></div>
                 <div class="container">
                     <div class="ai__wrapper">
-                        <h2 class="ai__title title"><span>Искусственный <br>интеллект</span> - это круто?</h2>
+                        <h3 class="ai__title title"><span>Искусственный <br>интеллект</span> - это круто?</h3>
                         <ul class="ai__list">
                             <li class="ai__item">
                                 <img src="img/icons/check-1.svg" alt="">
@@ -199,10 +197,10 @@
                     </div>
                 </div>
             </section>
-            <section class="main__important main">
+            <section class="main__important important">
                 <div class="container">
                     <div class="important__wrapper">
-                        <h2 class="important__title title"><span>Важно</span> понимать что</h2>
+                        <h4 class="important__title title"><span>Важно</span> понимать что</h4>
                         <ul class="important__list">
                             <li class="important__list-item">
                                 <div class="important__item-image"><img src="img/content/gallery/1.png"
@@ -213,7 +211,7 @@
                             </li>
                             <li class="important__list-item">
                                 <div class="important__item-image"><img src="img/content/gallery/2.png"
-                                        alt="Голограмма мозга"></div>
+                                        alt="Мужчина сидящий за ноутбуком"></div>
                                 <p class="important__item-text">Подготовка реально хороших специалистов требует времени,
                                     краткосрочные курсы эффекта не дают.</p>
                             </li>
@@ -223,7 +221,7 @@
                                     Они изучали все по видеоурокам и книжкам,
                                     и преподают без практики, что очень печально.</p>
                                 <div class="important__item-image"><img src="img/content/gallery/3.png"
-                                        alt="Голограмма мозга"></div>
+                                        alt="Выступление с презентацией"></div>
                             </li>
                             <li class="important__list-item">
                                 <p class="important__item-text">На многих курсах
@@ -232,21 +230,21 @@
                                     решать реальные задачи
                                     на работе. </p>
                                 <div class="important__item-image"><img src="img/content/gallery/4.png"
-                                        alt="Голограмма мозга"></div>
+                                        alt="Руки мужчины печатающего по клавиатуре ноутбука"></div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="main__features main">
+            <section class="main__features features">
                 <div class="features__image"></div>
                 <div class="features__circle"></div>
                 <div class="features__circle-2"></div>
                 <div class="container">
                     <div class="features__wrapper">
-                        <div class="features__title title">
+                        <h5 class="features__title title">
                             Почему именно наш курс? <span>Все просто!</span>
-                        </div>
+                        </h5>
                         <ul class="features__list">
                             <li class="features__list-item">
                                 <img src="img/icons/check-2.svg" alt="">
@@ -281,19 +279,20 @@
                     </div>
                 </div>
             </section>
-            <section class="main__program main">
+            <section class="main__program program">
                 <div class="container">
                     <div class="program__wrapper">
-                        <h5 class="program__title title">
+                        <h6 class="program__title title">
                             <span>Что я узнаю</span> из этих курсов?
-                        </h5>
+                        </h6>
                         <div class="program__subtitle">
                             Полностью весь курс состоит из 3 частей
                         </div>
                         <ul class="accordion-list">
                             <li class="accordion-list__item">
                                 <a href="#" class="accordion-list__control">
-                                    <h3 class="accordion-list__control-title">AI - Junior Level. <span>Продолжительность
+                                    <h3 class="accordion-list__control-title accordion-list__control-title--margin">AI -
+                                        Junior Level. <span>Продолжительность
                                             1
                                             год. </span></h3>
                                     <div class="accordion-list__control-icon"><img src="img/icons/accordion-open.svg"
@@ -699,6 +698,308 @@
                     </div>
                 </div>
             </section>
+            <section class="main__author author">
+                <div class="author__background-image"></div>
+                <div class="container">
+                    <div class="author__wrapper">
+                        <h6 class="author__title title">Автор курса</h6>
+                        <p class="author__desc">
+                            Основателем курса является Владимир Ким, действующий и ведущий специалист в области
+                            искусственного интеллекта в Южной Корее, который разрабатывал системы искусственного
+                            интеллекта для компаний Samsung SDS, LG science park
+                            и LG digital park.
+                            <br>
+                            <br>
+                            <br>
+                            На данный момент, Владимир занимается разработкой виртуальных сенсоров на основе нейронных
+                            сетей.
+                            <br>
+                            <br>
+                            Является одним из авторов диссертации об обработке больших данных для Южнокорейского
+                            института по развитию Интернета.
+                            <br>
+                            <br>
+                            Действующий член ассоциации разработчиков программного обеспечения в Южной Корее.
+                            <br>
+                            <br>
+                            Активно участвует в R&D проектах по внедрению искусственного интеллекта для государственных
+                            предприятий Южной Кореи.
+                        </p>
+                        <div class="author__image">
+                            <img src="img/content/author.png" alt="Автор курса">
+                            <p class="author__image-text">
+                                <span>Владимир Ким</span><br>Ведущий специалист
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__advertisments advertisments">
+                <div class="container">
+                    <div class="advertisments__inner">
+                        <div class="advertisments__top">
+                            <h6 class="advertisments__title title">Объявления школы</h6>
+                            <a href="#" class="all-button">Все объявления</a>
+                        </div>
+                        <div class="advertisments__button-prev">
+                            <svg width="21.752930" height="9.991211" viewBox="0 0 21.7529 9.99121" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Arrow-1"
+                                    d="M2.56 5.74L5.52 8.7C5.82 9 5.82 9.47 5.52 9.76C5.22 10.06 4.76 10.06 4.46 9.76L0.22 5.52C-0.08 5.22 -0.08 4.76 0.22 4.46L4.46 0.22C4.76 -0.08 5.22 -0.08 5.52 0.22C5.82 0.51 5.82 0.98 5.52 1.28L2.56 4.24L21.75 4.24L21.75 5.74L2.56 5.74Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="advertisments__button-next">
+                            <svg width="21.752930" height="9.991211" viewBox="0 0 21.7529 9.99121" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Arrow-1"
+                                    d="M19.18 5.74L16.22 8.7C15.92 9 15.92 9.47 16.22 9.76C16.52 10.06 16.99 10.06 17.28 9.76L21.53 5.52C21.82 5.22 21.82 4.76 21.53 4.46L17.28 0.22C16.99 -0.08 16.52 -0.08 16.22 0.22C15.92 0.51 15.92 0.98 16.22 1.28L19.18 4.24L0 4.24L0 5.74L19.18 5.74Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+
+                        </div>
+                        <!-- Slider main container -->
+                        <div class="advertisments__slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="advertisments__wrapper swiper-wrapper">
+
+                                <!-- Slides -->
+                                <div class="advertisments__slide swiper-slide">
+                                    <div class="advertisments__slide-image">
+                                        <img src="img/content/vacancy/4.png" alt="">
+                                        <div class="advertisments__slide-date">
+                                            <img src="img/icons/calendar.svg" alt="">
+                                            24 мая 2021
+                                        </div>
+                                    </div>
+                                    <div class="advertisments__slide-desc">
+                                        <h6 class="advertisments__slide-title">Заголовок объявления из несколькиз
+                                            слов</h6>
+                                        <p class="advertisments__slide-text">Искусственный интеллект - это не одна
+                                            дисциплина, как думают многие, а совокупность различных между
+                                        </p>
+                                    </div>
+                                    <a href="#" class="advertisments__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="advertisments__slide swiper-slide">
+                                    <div class="advertisments__slide-image">
+                                        <img src="img/content/vacancy/3.png" alt="">
+                                        <div class="advertisments__slide-date">
+                                            <img src="img/icons/calendar.svg" alt="">
+                                            24 мая 2021
+                                        </div>
+                                    </div>
+                                    <div class="advertisments__slide-desc">
+                                        <h6 class="advertisments__slide-title">Заголовок объявления из несколькиз
+                                            слов</h6>
+                                        <p class="advertisments__slide-text">Искусственный интеллект - это не одна
+                                            дисциплина, как думают многие, а совокупность различных между
+                                        </p>
+                                    </div>
+                                    <a href="#" class="advertisments__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="advertisments__slide swiper-slide">
+                                    <div class="advertisments__slide-image">
+                                        <img src="img/content/vacancy/2.png" alt="">
+                                        <div class="advertisments__slide-date">
+                                            <img src="img/icons/calendar.svg" alt="">
+                                            24 мая 2021
+                                        </div>
+                                    </div>
+                                    <div class="advertisments__slide-desc">
+                                        <h6 class="advertisments__slide-title">Заголовок объявления из несколькиз
+                                            слов</h6>
+                                        <p class="advertisments__slide-text">Искусственный интеллект - это не одна
+                                            дисциплина, как думают многие, а совокупность различных между
+                                        </p>
+                                    </div>
+                                    <a href="#" class="advertisments__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="advertisments__slide swiper-slide">
+                                    <div class="advertisments__slide-image">
+                                        <img src="img/content/vacancy/1.png" alt="">
+                                        <div class="advertisments__slide-date">
+                                            <img src="img/icons/calendar.svg" alt="">
+                                            24 мая 2021
+                                        </div>
+                                    </div>
+                                    <div class="advertisments__slide-desc">
+                                        <h6 class="advertisments__slide-title">Заголовок объявления из несколькиз
+                                            слов</h6>
+                                        <p class="advertisments__slide-text">Искусственный интеллект - это не одна
+                                            дисциплина, как думают многие, а совокупность различных между
+                                        </p>
+                                    </div>
+                                    <a href="#" class="advertisments__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="advertisments__slide swiper-slide">
+                                    <div class="advertisments__slide-image">
+                                        <img src="img/content/vacancy/4.png" alt="">
+                                        <div class="advertisments__slide-date">
+                                            <img src="img/icons/calendar.svg" alt="">
+                                            24 мая 2021
+                                        </div>
+                                    </div>
+                                    <div class="advertisments__slide-desc">
+                                        <h6 class="advertisments__slide-title">Заголовок объявления из несколькиз
+                                            слов</h6>
+                                        <p class="advertisments__slide-text">Искусственный интеллект - это не одна
+                                            дисциплина, как думают многие, а совокупность различных между
+                                        </p>
+                                    </div>
+                                    <a href="#" class="advertisments__slide-detailed">Подробнее</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="advertisments__button-mobile">
+                            Все объявления
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__vacancys vacancys">
+                <div class="container">
+                    <div class="vacancys__inner">
+                        <div class="vacancys__top">
+                            <h6 class="vacancys__title title">Вакансии</h6>
+                            <a href="#" class="all-button">Все вакансии</a>
+                        </div>
+                        <div class="vacancys__button-prev">
+                            <svg width="21.752930" height="9.991211" viewBox="0 0 21.7529 9.99121" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Arrow-1"
+                                    d="M2.56 5.74L5.52 8.7C5.82 9 5.82 9.47 5.52 9.76C5.22 10.06 4.76 10.06 4.46 9.76L0.22 5.52C-0.08 5.22 -0.08 4.76 0.22 4.46L4.46 0.22C4.76 -0.08 5.22 -0.08 5.52 0.22C5.82 0.51 5.82 0.98 5.52 1.28L2.56 4.24L21.75 4.24L21.75 5.74L2.56 5.74Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="vacancys__button-next">
+                            <svg width="21.752930" height="9.991211" viewBox="0 0 21.7529 9.99121" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Arrow-1"
+                                    d="M19.18 5.74L16.22 8.7C15.92 9 15.92 9.47 16.22 9.76C16.52 10.06 16.99 10.06 17.28 9.76L21.53 5.52C21.82 5.22 21.82 4.76 21.53 4.46L17.28 0.22C16.99 -0.08 16.52 -0.08 16.22 0.22C15.92 0.51 15.92 0.98 16.22 1.28L19.18 4.24L0 4.24L0 5.74L19.18 5.74Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+
+                        </div>
+                        <!-- Slider main container -->
+                        <div class="vacancys__slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="vacancys__wrapper swiper-wrapper">
+
+                                <!-- Slides -->
+                                <div class="vacancys__slide swiper-slide">
+                                    <div class="vacancys__slide-image">
+                                        <img src="img/content/vacancy/1.png" alt="">
+                                    </div>
+                                    <div class="vacancys__slide-desc">
+                                        <h6 class="vacancys__slide-title">Требуется администратор</h6>
+                                        <p class="vacancys__slide-text">Опыт работы . . . . . . . . . . . . . . . . . .
+                                            . . . . . . . . . . . . от 1 года
+                                            <br>Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            Высшее
+                                            <br>Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            . .
+                                            . 21-35 лет
+                                        </p>
+                                    </div>
+                                    <a href="#" class="vacancys__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="vacancys__slide swiper-slide">
+                                    <div class="vacancys__slide-image">
+                                        <img src="img/content/vacancy/2.png" alt="">
+                                    </div>
+                                    <div class="vacancys__slide-desc">
+                                        <h6 class="vacancys__slide-title">Требуется менеджер</h6>
+                                        <p class="vacancys__slide-text">Опыт работы . . . . . . . . . . . . . . . . . .
+                                            . . . . . . . . . . . . от 1 года
+                                            <br>Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            Высшее
+                                            <br>Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            . .
+                                            . 21-35 лет
+                                        </p>
+                                    </div>
+                                    <a href="#" class="vacancys__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="vacancys__slide swiper-slide">
+                                    <div class="vacancys__slide-image">
+                                        <img src="img/content/vacancy/3.png" alt="">
+                                    </div>
+                                    <div class="vacancys__slide-desc">
+                                        <h6 class="vacancys__slide-title">Требуется администратор</h6>
+                                        <p class="vacancys__slide-text">Опыт работы . . . . . . . . . . . . . . . . . .
+                                            . . . . . . . . . . . . от 1 года
+                                            <br>Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            Высшее
+                                            <br>Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            . .
+                                            . 21-35 лет
+                                        </p>
+                                    </div>
+                                    <a href="#" class="vacancys__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="vacancys__slide swiper-slide">
+                                    <div class="vacancys__slide-image">
+                                        <img src="img/content/vacancy/4.png" alt="">
+                                    </div>
+                                    <div class="vacancys__slide-desc">
+                                        <h6 class="vacancys__slide-title">Требуется менеджер</h6>
+                                        <p class="vacancys__slide-text">Опыт работы . . . . . . . . . . . . . . . . . .
+                                            . . . . . . . . . . . . от 1 года
+                                            <br>Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            Высшее
+                                            <br>Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            . .
+                                            . 21-35 лет
+                                        </p>
+                                    </div>
+                                    <a href="#" class="vacancys__slide-detailed">Подробнее</a>
+                                </div>
+                                <div class="vacancys__slide swiper-slide">
+                                    <div class="vacancys__slide-image">
+                                        <img src="img/content/vacancy/1.png" alt="">
+                                    </div>
+                                    <div class="vacancys__slide-desc">
+                                        <h6 class="vacancys__slide-title">Требуется администратор</h6>
+                                        <p class="vacancys__slide-text">Опыт работы . . . . . . . . . . . . . . . . . .
+                                            . . . . . . . . . . . . от 1 года
+                                            <br>Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            Высшее
+                                            <br>Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            . .
+                                            . 21-35 лет
+                                        </p>
+                                    </div>
+                                    <a href="#" class="vacancys__slide-detailed">Подробнее</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="vacancys__button-mobile">
+                            Все вакансии
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="container">
@@ -748,6 +1049,21 @@
             </div>
             <div class="footer__circle"></div>
         </footer>
+        <a href="#" class="back-to-top">
+            <p class="back-to-top__text">
+                Подняться вверх
+            </p>
+            <svg width="13.322266" height="30.003906" viewBox="0 0 13.3223 30.0039" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Arrow-2"
+                    d="M5.66 3.41L1.71 7.36C1.31 7.76 0.69 7.76 0.29 7.36C-0.1 6.97 -0.1 6.34 0.29 5.95L5.95 0.29C6.34 -0.1 6.97 -0.1 7.36 0.29L13.02 5.95C13.42 6.34 13.42 6.97 13.02 7.36C12.62 7.76 12 7.76 11.61 7.36L7.66 3.41L7.66 30L5.66 30L5.66 3.41Z"
+                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+            </svg>
+        </a>
     </div>
     <div class="modal">
         <div class="modal__window">
@@ -776,7 +1092,6 @@
             </form>
         </div>
     </div>
-    <script src="js/fslightbox.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/main.js"></script>
