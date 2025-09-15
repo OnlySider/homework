@@ -35,6 +35,7 @@ const currentYear = 2025;
 const birthYear = currentYear - age;
 
 console.log(`Меня зовут ${firstName + " " + lastName}, мне ${age} года. Я ученик курса aroken.ru: ${isStudent}.`);
+console.log(`Год рождения: ${birthYear}`)
 
 //===========Ответ на 4 задачу==================
 
